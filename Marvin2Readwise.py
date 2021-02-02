@@ -1,4 +1,5 @@
 # Python3
+## version 03-02-2021
 # Marvin Export to Readwise
 
 import csv, sys, json
