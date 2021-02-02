@@ -18,7 +18,8 @@ def ReadwiseExporter(MarvinCsv, ExportCsv):
     writer.writerow(['Highlight', 'Title', 'Author', 'URL', 'Note', 'Location'])
     for row in rows:
       if not row.get('HighlightText'):
-        row['HighlightText'] = 'NOTE: ' + row.get('EntryText')
+        row['HighlightText'] = 'VOCAB: ' + row.get('EntryText') # ASSUMES is Highlighted Vocab
+        row['EntryText'] = '' # Clear Entry Text as not to get duplicate
       writer.writerow([
         row['HighlightText'].replace('\n', ''),
         row['Title'].replace('\n', ''),
