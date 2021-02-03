@@ -1,5 +1,5 @@
 # Marvin 2 Readwise Exporter
-Export Marvin Annotations and Highlights to CSV compatible with Readwise
+Export Marvin 3 Annotations and Highlights to CSV compatible with Readwise
 
 How to Use
 
