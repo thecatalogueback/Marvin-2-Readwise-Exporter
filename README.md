@@ -1,5 +1,5 @@
 # Marvin 2 Readwise Exporter
-Export Marvin 3 Annotations and Highlights to CSV compatible with Readwise
+Export Marvin 3 annotations and highlights to CSV compatible with Readwise. At the moment this only supports text highlights and not any photo highlights.
 
 How to Use
 
