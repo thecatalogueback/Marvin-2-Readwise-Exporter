@@ -12,7 +12,7 @@ def ReadwiseExporter(MarvinCsv, ExportCsv):
       if row.get('HighlightText') or row.get('EntryText'):
         rows.append(row)
 
-  print(json.dumps(rows)) # DEBUG
+  #print(json.dumps(rows)) # DEBUG
 
   with open(ExportCsv, 'w', newline='') as csvfile:
     writer = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
