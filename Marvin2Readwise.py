@@ -1,5 +1,5 @@
 # Python3
-## version 03-02-2021a
+## version 12-02-2021
 # Marvin Export to Readwise
 
 import csv, sys, json
@@ -20,7 +20,7 @@ def ReadwiseExporter(MarvinCsv, ExportCsv):
     for row in rows:
       if row.get('HighlightText') or row.get('EntryText'): # Valid Entry
         if not row.get('HighlightText') and row.get('EntryText'):
-          row['HighlightText'] = 'VOCAB: ' + row.get('EntryText') # ASSUMES is Highlighted Vocab
+          row['HighlightText'] = row.get('EntryText') # EntryText Becomes HighlightText
           row['EntryText'] = '' # Clear Entry Text as not to get duplicate
         writer.writerow([
           row['HighlightText'].replace('\n', '    '),
